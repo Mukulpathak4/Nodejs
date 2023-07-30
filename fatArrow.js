@@ -8,7 +8,7 @@ class Student{
     // setPlacementAge(minPlacementAge){
     //     console.log(this);
     //     return function eligibleOrNot(minMarks){
-    //         console.log('inside eligible function' + ' '+ this);  //Here this will have undefined beacause no object is calling eligibleornot above function is calling it 
+    //         console.log('inside eligible function' ,this);  //Here this will have undefined beacause no object is calling eligibleornot above function is calling it 
     //         if(this.marks>minMarks)
     //         console.log("Eligible for placement");
     //         else
@@ -22,7 +22,7 @@ class Student{
     setPlacementAge(minPlacementAge){
         console.log(this);
         return (minMarks) =>{
-            console.log('inside eligible function' + ' '+ this);
+            console.log('inside eligible function',this);
             if(this.marks>minMarks)
             console.log("Eligible for placement");
             else
