@@ -24,3 +24,7 @@ const server = http.createServer((req, res) => {
 server.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });
+
+//<p>Want to quit your running Node.js server?</p><p>You can always do that by pressing
+// <code>CTRL + C</code> in the terminal/ command prompt window where you started your server
+// (i.e. where you ran <code>node app.js</code>).
