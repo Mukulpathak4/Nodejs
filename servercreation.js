@@ -14,6 +14,7 @@ const yourName = 'Mukul Pathak';
 const server = http.createServer((req, res) => {
   res.writeHead(200, { 'Content-Type': 'text/plain' });
   res.end(yourName);
+  process.exit();
 });
 
 //Starting the server and listening for incoming request
@@ -31,20 +32,20 @@ server.listen(port, () => {
 
 
 //for accessing information about request
-const server1 = http.createServer((req,res)=>{
-    console.log(req.headers,req.method,req.url);
-})
+// const server1 = http.createServer((req,res)=>{
+//     console.log(req.headers,req.method,req.url);
+// })
 
-//for sending response
-const server1 = http.createServer((req,res)=>{
-    console.log(req.headers,req.method,req.url);
-    res.setHeader('Content-Type', 'text/html');
-    res.write('<html>');
-    res.write('<head></head>')
-    res.write('<body><h1>Hii This ia to learn the response</h1></body>')
-    res.write('</html>');
-    res.end();
-})
+// //for sending response
+// const server1 = http.createServer((req,res)=>{
+//     console.log(req.headers,req.method,req.url);
+//     res.setHeader('Content-Type', 'text/html');
+//     res.write('<html>');
+//     res.write('<head></head>')
+//     res.write('<body><h1>Hii This ia to learn the response</h1></body>')
+//     res.write('</html>');
+//     res.end();
+// })
 
 //<p>On both requests and responses, Http headers are added to transport metadata from A to B.
 //</p><p>The following article provides a great overview of available headers

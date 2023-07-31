@@ -51,7 +51,7 @@ setTimeout(()=>{
 
 
 
-Task by sharpener
+// Task by sharpener
 1
 console.log('a');
 console.log('b');
