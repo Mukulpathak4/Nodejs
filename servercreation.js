@@ -28,3 +28,28 @@ server.listen(port, () => {
 //<p>Want to quit your running Node.js server?</p><p>You can always do that by pressing
 // <code>CTRL + C</code> in the terminal/ command prompt window where you started your server
 // (i.e. where you ran <code>node app.js</code>).
+
+
+//for accessing information about request
+const server1 = http.createServer((req,res)=>{
+    console.log(req.headers,req.method,req.url);
+})
+
+//for sending response
+const server1 = http.createServer((req,res)=>{
+    console.log(req.headers,req.method,req.url);
+    res.setHeader('Content-Type', 'text/html');
+    res.write('<html>');
+    res.write('<head></head>')
+    res.write('<body><h1>Hii This ia to learn the response</h1></body>')
+    res.write('</html>');
+    res.end();
+})
+
+//<p>On both requests and responses, Http headers are added to transport metadata from A to B.
+//</p><p>The following article provides a great overview of available headers
+// and their role: <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers" 
+//rel="noopener noreferrer" target="_blank">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers</a></p>
+//<p>Whilst this article is a great resource, especially to dive deeper, 
+//please <strong>don't learn this list by heart</strong> though! You'll encounter 
+//many of these headers throughout the course and I'll explain them when we need them.</p>
