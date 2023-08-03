@@ -53,7 +53,7 @@ const requestHandler = (req,res)=>{
             `);
             res.write('</script>');
             res.write('</body></html>');
-            return res.end(); // Return the response to the client and end the response process
+            res.end(); // Return the response to the client and end the response process
         });
 
         // Handle errors during file read
