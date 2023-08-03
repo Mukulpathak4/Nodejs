@@ -1,0 +1,1 @@
+console.log("Hii this is to learn nodemon and package json")
